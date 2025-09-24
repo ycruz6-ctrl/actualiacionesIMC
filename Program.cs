@@ -23,5 +23,10 @@ internal class Program
         p.direccion = Console.ReadLine();
         Console.WriteLine("Ingrese su telefono: ");
         p.telefono = int.Parse(Console.ReadLine());
+
+        float imc = p.calcularIMC();
+        Console.WriteLine($"hola {p.nombre}, Su IMC es: {imc}");
     }
+
+    
 }

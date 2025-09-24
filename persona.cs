@@ -17,14 +17,18 @@ public class Persona
     {
         this.nombre = "";
         this.edad = 0;
-        this.peso = 0;
-        this.altura = 0;
+        this.peso = 0.0f;
+        this.altura = 0.0f;
         this.sexo = "";
         this.correo = "";
         this.direccion = "";
         this.telefono = 0;
     }
 
-    
+    public float calcularIMC()
+    {
+        return peso / (altura * altura);
+    }
+
 
 }
